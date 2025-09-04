@@ -25,6 +25,16 @@ Before starting the RTL-to-GDS flow, ensure you have the following:
    * GDSII Export
 <img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/155409ac-7878-470a-9b76-3042a2615355" />
 
+# Repository Structure
+Cadence-RTL2GDS-8bitALU/
+│
+├── rtl/        # Verilog RTL + testbench
+├── synth/      # Synthesized netlist + reports
+├── pd/         # Physical design outputs (DEF, GDS, logs)
+├── scripts/    # TCL scripts for Cadence tools
+├── docs/       # Prerequisites, flow steps, screenshots
+└── README.md   # Main overview file
+
 # Acknowledgements
 This project was carried out using **Cadence Tools** as part of academic learning and research work at
 **Vivekananda Instutute of Professional Studies- Technical Campus**, **Department of Electronics Engineering (VLSI & Design Technology)**.
