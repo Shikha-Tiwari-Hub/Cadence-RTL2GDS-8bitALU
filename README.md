@@ -13,5 +13,24 @@ Before starting the RTL-to-GDS flow, ensure you have the following:
 * Liberty timing files (`*.lib`)
 
 # RTL-to-GDSII Flow
-<img width="658" height="748" alt="image" src="https://github.com/user-attachments/assets/155409ac-7878-470a-9b76-3042a2615355" />
+1. RTL Design
+2. Logic Synthesis
+3. Physical Design
+   * Floorplanning
+   * Power Planning
+   * Placement
+   * Placement
+   * Routing
+   * STA, DRC, LVS
+   * GDSII Export
+<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/155409ac-7878-470a-9b76-3042a2615355" />
 
+# Acknowledgements
+This project was carried out using **Cadence Tools** as part of academic learning and research work at
+**Vivekananda Instutute of Professional Studies- Technical Campus**, **Department of Electronics Engineering (VLSI & Design Technology)**.
+Special thanks to **Cadence Academic Network** for providing tool access and support.
+
+# License
+This project is licensed under the MIT License[https://mit-license.org/]
+ © 2025 **Shikha Tiwari, Vivekananda Instutute of Professional Studies- Technical Campus** .
+Developed using **Cadence EDA tools** for educational and research purposes.
