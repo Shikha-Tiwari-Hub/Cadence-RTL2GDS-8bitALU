@@ -22,6 +22,12 @@ gedit alu8_tb.v
 ```
 *👉 Paste your Verilog code inside the files.*
 
+## Step 3: Run Cadence Tools
+```bash
+# Source Cadence environment (example)
+csh
+source /home/install/cshrc
+```
 # Simulation & Verification with Xcelium (xrun)
 ## compile & run
 ```bash
