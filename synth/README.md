@@ -1,4 +1,4 @@
-# Synthesis (Cadence Genus)
+# Logic Synthesis (Cadence Genus)
 Convert RTL into a gate-level netlist using Genus.
 
 ```bash
