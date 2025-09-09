@@ -19,7 +19,7 @@ On the GUI screen do the followings:
 Netlist → Verilog files → alu_netlist.v\
 Power nets → VDD\
 Ground Nets → VSS\
-Analysis Configuration → Create Analysis Configuration.. → create → Default.view\`
+Analysis Configuration → Create Analysis Configuration.. → create → Default.view`
 *Save the Config.*
    
 ## 1. Floorplanning
@@ -43,7 +43,7 @@ On the GUI screen do the followings:
 ## 3. Special Routing
 Happens before CTS so that buffers & cells have power. It connect std cell rails, pads, and macros to power/ground.\
 On the GUI screen do the followings:
-`Route → Special Route → Basic (Tab)` 
+`Route → Special Route → Basic (Tab)` \
 <img width="181" height="143" alt="image" src="https://github.com/user-attachments/assets/381796f6-7c8c-4298-903a-a01b64ddfdf3" />
 
 ## 4. Placement
@@ -92,22 +92,22 @@ minimizing clock skew and latency to optimize timing.
 Detail routing is the process of connecting the cells and macros in the design on metal layers
 specified in the technology LEF file that is generally provided by the foundry so that the
 routes are DRC correct and timing and signal-integrity aware.
-
-```bash
-routeDesign -globalDetail
-```
+1. Performs both global routing and detailed routing
+   ```bash
+   routeDesign -globalDetail
+   ```
 2. Perform post-route timing optimization 
-```bash
-optDesign -postRoute
-```
+   ```bash
+   optDesign -postRoute
+   ```
 3. Perform post-route timing optimization specifically for hold violations
-```bash
-optDesign -postRoute -hold
-```
+   ```bash
+   optDesign -postRoute -hold
+   ```
 4. Perform post-route timing optimization specifically for setup violations
-```bash
-optDesign -postRoute -setup
-```
+   ```bash
+   optDesign -postRoute -setup
+   ```
 5. Check DRC violations (Minimum width, minimum spacing, antenna violations)
    ```bash
    verify_drc
@@ -150,6 +150,8 @@ check_connectivity
 timeDesign -signoff
 ```
 
+## 11. GDSII streamout
+The final geometric data is exported in GDSII format
 
 
 
