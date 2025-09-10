@@ -33,18 +33,15 @@ On the GUI screen do the followings:
 
   
 2. `Power → Power Planning → Add Ring → Basic (Tab)`
-<img width="299" height="199" alt="image" src="https://github.com/user-attachments/assets/7be05d2b-19b4-4a55-9bd0-5c460dd2dc2c" />
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/408e221b-2924-489b-ba61-d2e3290d3387" />
 
 3. `Power → Power planning → Add Stripe →  Basic (Tab)`
-<img width="299" height="199" alt="image" src="https://github.com/user-attachments/assets/019ba6c0-054f-42ac-8e5e-8e511aeb8154" />
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/2b41324e-b06a-4338-b8dc-990675c2d67e" />
 
 ## 3. Special Routing
 Happens before CTS so that buffers & cells have power. It connect std cell rails, pads, and macros to power/ground.\
 On the GUI screen do the followings:
 `Route → Special Route → Basic (Tab)` \
-<img width="181" height="143" alt="image" src="https://github.com/user-attachments/assets/381796f6-7c8c-4298-903a-a01b64ddfdf3" />
 
 ## 4. Placement
 Placement is the process of placing the standard cells and blocks in a floorplanned design.
@@ -112,25 +109,8 @@ routes are DRC correct and timing and signal-integrity aware.
    ```bash
    verify_drc
    ```
-## 7. Timing and SI-Driven Routing
-Set NanoRoute™ modes for timing and SI-driven routing guides the router to produce routes with the best Quality of Results (QoR).\
-On the GUI screen do the followings:
-`Route → NanoRoute → route`
 
-## 8. Adding Filler Cells
-Filler cells are used to fill the gaps between standard cell instances to provide continuity for the power and ground rails and n-wells.\
-On the GUI screen do the followings:
-`Place → Physical Cell → Add Filler`\
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9a657306-1911-4843-b17f-84283d0a71af" />
-
-## 9. Extracting RC Data
-Extraction of Interconnect Data:
-* SPEF (standard parasitic exchange format)
-* Select a corner for extraction\
-`Timing → Extract RC`
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/862fb4be-1616-4543-8451-f51ba7506f5c" />
-
-## 10. Signoff and Verification
+## 7. Signoff and Verification
 * Design-rule checks (DRCs) are checks that are performed with respect to the rules provided by a foundry for a particular technology and process node.
 * Layout-vs.-schematic (LVS) violations occur when there is a mismatch in connectivity between what is in the placed and routed design and the Verilog netlist orshorted nets.
 1. Check for DRC (Design Rule Check) violations
